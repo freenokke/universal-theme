@@ -1,0 +1,150 @@
+.home
+    background-color: #E5E5E5
+.front-page-header
+    padding-top: 30px
+    background-color: #262D33
+    position: relative
+    height: 470px
+.hero
+    display: flex
+    min-height: 570px
+    max-height: 570px
+    background-color: #ffff
+    border-radius: 10px
+    overflow: hidden
+    position: relative
+    z-index: 1
+    &-left
+        flex-basis: 75%
+        padding: 55px 55px 100px 55px
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(#40303D, 0.35)
+            z-index: 0
+        .post-thumb
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            z-index: 0
+            height: 100%
+            object-fit: cover
+        .author
+            z-index: 2
+            display: flex
+            text-decoration: none
+            &-bio
+                margin-left: 10px
+            &-photo
+                width: 45px
+                height: 45px
+                border-radius: 50%
+            &-name
+                display: block
+                font-size: 14px
+                line-height: 20px
+                color: rgba(#FFFFFF, 0.85)
+            &-rank
+                font-size: 12px
+                line-height: 15px
+                color: rgba(#FFFFFF, 0.4)
+        .post-text
+            z-index: 2
+            .post-title
+                font-weight: bold
+                font-size: 40px
+                line-height: 50px
+                font-family: "Roboto Slab", serif
+                color: #ffff
+                margin: 0
+                margin-bottom: 50px
+                margin-top: 20px
+                max-width: 550px
+            .more
+                width: 154px
+                height: 40px
+                display: inline-block
+                padding: 10px 45px 10px 20px
+                border-radius: 20px
+                background: #4592FF
+                color: #ffff
+                text-decoration: none
+                background-image: url('../images/arrow.svg')
+                background-repeat: no-repeat
+                background-position: center right 20px
+            
+    &-right
+        flex-basis: 25%
+        .recommended
+            padding: 19px 25px
+            margin: 0
+            font-family: "Lato Black", sans-serif
+            letter-spacing: 0.5px
+            text-transform: uppercase
+        .posts
+            margin: 0
+            padding: 0
+            &-item
+                padding: 19px 25px
+                margin: 0
+                list-style: none
+                min-height: 100px
+                height: 100px
+                border-top: 1px solid #D9DADB
+                transition: background-color .5s
+                &:hover
+                    background-color: #F5F5F5
+                a
+                    text-decoration: none
+                .post-categories
+                    margin: 0
+                    padding: 0
+                    list-style: none
+                    a
+                        font-family: "Lato Black", sans-serif
+                        font-weight: 900
+                        font-size: 12px
+                        line-height: 15px
+                        letter-spacing: 0.5px
+                        text-transform: uppercase
+                        text-decoration: none
+                        margin: 0
+                        padding: 0
+            &-title
+                margin: 0
+                font-size: 14px
+                line-height: 20px
+                color: #4B5157
+                margin-top: 8px
+                text-decoration: none
+
+.category-link
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    text-decoration: none
+    display: inline-block
+    &.web-design
+        color: #FFA34D
+    &.javascript
+        color: #6E99AE
+    &.css
+        color: #3BBDC4
+    &.html
+        color: #AC8EE3
+
+
+    
+

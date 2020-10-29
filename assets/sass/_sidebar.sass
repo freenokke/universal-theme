@@ -1,0 +1,182 @@
+body
+    counter-reset: section
+.sidebar
+    &-front-page
+        margin-top: 30px
+        margin-left: 30px 
+        .widget
+            border-radius: 10px
+            &-download
+                color: #ffff
+                background-color: #3BBDC4
+                padding: 25px
+                padding-bottom: 65px
+                position: relative 
+            &-title
+                margin: 0
+                font-size: 16px
+                line-height: 25px
+                font-family: "Roboto Slab", serif
+            &-description
+                margin: 0
+                margin-top: 10px
+                font-size: 14px
+                line-height: 20px
+                color: rgba(#C1F4F5, 0.9)
+            &-link
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 13px 90px
+                text-decoration: none
+                border-top: 2px solid rgba(#96E2E3, 0.75)
+                .icon-download
+                    margin-right: 5px
+                span
+                    font-size: 14px
+                    line-height: 20px
+                    color: #ffff
+                    font-family: "Lato Black", serif
+            &_tag_cloud
+                background-color: #ffff
+                .widget-title
+                    padding: 20px 25px
+                    text-transform: uppercase
+                .tagcloud
+                    padding: 25px
+                    border-top: 2px solid #D9DADB
+                .tag-cloud-link
+                    display: inline-block
+                    text-decoration: none
+                    padding: 5px 15px
+                    border: 1px solid #D9DADB
+                    border-radius: 5px
+                    font-family: "Lato Black", serif
+                    color: black
+                    text-transform: capitalize
+                    margin-bottom: 15px
+                    margin-right: 5px
+                    transition: 0.3s
+                    &:hover
+                        transform: scale(1.1)
+                        box-shadow: 0 0 5px rgba(0,0,0,0.5)            
+            &-social
+                background-color: #ffff
+                padding: 30px 36px 40px 36px
+                display: flex
+                flex-direction: column
+                align-items: center
+                .widget
+                    &-title
+                        font-size: 20px
+                        line-height: 25px
+                        margin-bottom: 25px
+                    &-links-list
+                        width: 100%
+                        margin: 0
+                        padding: 0
+                        list-style: none
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        li
+                            border-radius: 50%
+                            width: 40px
+                            height: 40px
+                            position: relative
+                            overflow: hidden
+                            .widget-link
+                                    position: absolute
+                                    top: 0
+                                    right: 0
+                                    left: 0
+                                    bottom: 0
+                                    padding: 0
+                                    margin: 0
+                                    border: none
+                                    text-decoration: none
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    z-index: 0
+                            .facebook
+                                background-color: #4267B2
+                            .twitter
+                                background-color: #1DA1F2
+                            .youtube
+                                background-color: #FF0000
+                            .instagram
+                                background-color: #262626
+    &-recent 
+        margin-left: 29px
+        .widget
+            border-radius: 10px
+            &-title
+                padding: 20px 25px
+                margin: 0
+                font-size: 14px
+                line-height: 20px
+                letter-spacing: 0.5px
+                text-transform: uppercase
+                color: #262D33
+                font-family: "Lato Black", serif
+            &-recent
+                background-color: #ffffff
+                &-wrapper
+                    padding: 0px 25px 17px
+                    border-bottom: 1px solid #D9DADB
+                    border-top: 1px solid #D9DADB
+                &-permalink
+                    text-decoration: none
+                    display: flex
+                    align-items: center
+                    padding: 17px 0
+                    position: relative
+                    &:not(:last-child)
+                        border-bottom: 1px solid #D9DADB    
+                    img
+                        height: 60px
+                        width: 60px
+                        margin-right: 10px
+                    &::after
+                        counter-increment: section
+                        content: counter(section)
+                        position: absolute
+                        right: 0px
+                        font-size: 70px
+                        line-height: 50px
+                        color: #262D33
+                        opacity: 0.08
+                        font-style: italic
+                        font-family: "Lato Black", sans-serif
+                &-info
+                    display: flex
+                    flex-direction: column
+                    span
+                        font-size: 12px
+                        line-height: 15px
+                        color: #939699
+                    h4
+                        font-size: 14px
+                        line-height: 20px
+                        color: #4B5157
+                        margin: 0
+                        margin-bottom: 5px
+                .farther
+                    display: block
+                    padding: 12px 97px
+                    a
+                        text-decoration: none
+                        font-size: 14px
+                        line-height: 20px
+                        color: #262D33
+                        font-family: "Lato Black", serif
+                    
+
+        
+                                
+                        
+                        
+                
+

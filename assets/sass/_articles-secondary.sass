@@ -1,0 +1,97 @@
+.secondary-grid
+    display: flex
+    align-items: flex-start
+    margin-top: 60px
+.articles-secondary
+    max-width: 845px
+    min-width: 845px
+    border-radius: 10px
+    overflow: hidden
+    &-list
+        list-style: none
+        padding: 0
+        margin: 0
+    &-item
+        background-color: #fff
+    &-permalink
+        padding: 25px 25px
+        display: flex
+        text-decoration: none
+        justify-content: space-between
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            height: 1px
+            bottom: 0
+            left: 0
+            width: 795px
+            left: 50%
+            transform: translateX(-50%)
+            background-color: #D9DADB
+        .icon
+            &-bookmark
+                position: absolute
+                top: 25px
+                right: 25px
+    &-content
+        display: flex
+        flex-direction: column
+    &-info
+        display: flex
+        align-items: center
+    &-thumb
+        width: 336px
+        object-fit: cover
+    &-text
+        display: flex
+        flex-direction: column
+        max-width: 437px
+        p
+            font-size: 14px
+            line-height: 20px
+            font-weight: 400
+            color: #4B5157
+            margin: 0
+            margin-bottom: 20px
+    &-title
+        font-size: 20px
+        line-height: 25px
+        color: #262D33
+        font-family: "Roboto Slab", serif
+        margin-top: 15px
+        margin-bottom: 10px
+    &-info
+        font-size: 12px
+        line-height: 15px
+        .date, .comments, .likes
+            display: flex
+            align-items: center
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+            &:not(:last-child)
+                margin-right: 10px 
+            .icon
+                &-comment
+                    margin-right: 5px
+                &-likes
+                    margin-right: 5px
+.category-link
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    font-family: "Lato Black", serif
+    &.hotnews
+        color: #FF4F52
+    &.news
+        color: #4592FF
+    &.opinions
+        color: #3BBDC4
+    &.selections
+        color: #AC8EE3
+    
+        
+
+    
