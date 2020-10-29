@@ -394,7 +394,13 @@
 	<div class="container">
 		<div class="special-grid">
 			<div class="photo-report">
-			
+			<?php
+				foreach (get_the_category() as $category) {						
+				printf('<span class="category-link %s">%s</span>',
+				esc_html( $category -> slug ),
+				esc_html( $category -> name ),
+				);}
+			?>
 			</div>
 			<div class="other"></div>
 		</div>
